@@ -1,0 +1,20 @@
+springdoc:
+  swagger-ui:
+    path: /docs
+    operations-sorter: method
+    tags-sorter: alpha
+    display-request-duration: true
+    syntax-highlight:
+      theme: agate
+
+spring:
+  r2dbc:
+    password: root
+    username: root
+    url: localhost:3306/quickstart-spring
+  kafka:
+    bootstrap-servers: localhost:29092
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+    date-format: com.fasterxml.jackson.databind.util.ISO8601DateFormat
